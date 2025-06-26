@@ -26,7 +26,7 @@ export default function Header() {
     });
 
     return (
-        <header className="sticky top-0 left-0 w-full flex justify-between items-center h-16 px-2.5 sm:px-5 md:px-7 lg:px-10 bg-primary">
+        <header className="sticky top-0 left-0 z-50 w-full flex justify-between items-center h-16 px-2.5 sm:px-5 md:px-7 lg:px-10 bg-primary">
             <p className="relative flex flex-col h-6 w-40 overflow-hidden">
                 <span id="el1" className="h-6">
                     David Lee

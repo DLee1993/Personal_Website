@@ -1,3 +1,4 @@
+import ProjectsList from "@/components/ProjectsList";
 import SocialLinks from "@/components/SocialLinks";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
                 </article>
                 <SocialLinks />
             </section>
+            <ProjectsList />
         </section>
     );
 }
