@@ -39,7 +39,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`min-h-screen antialiased bg-primary text-secondary ${nunito.variable} ${bebas.variable}`}
+                className={`min-h-screen antialiased bg-primary text-secondary font-nunito ${nunito.variable} ${bebas.variable}`}
             >
                 <Header />
                 <main>{children}</main>
