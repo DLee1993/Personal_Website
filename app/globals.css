@@ -6,6 +6,6 @@
     --font-jetBrains: var("--font-jetBrains");
 
     /* Colors */
-    --color-primary: #232323;
-    --color-secondary: #E3DEDB;
+    --color-dark: #232323;
+    --color-light: #E3DEDB;
 }
