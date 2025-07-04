@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 export const metadata: Metadata = {
     title: "David Lee | Frontend Developer",
@@ -58,8 +60,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${jetBrains.variable} ${poppins.variable} antialiased`}>
+            <body className={`${jetBrains.variable} ${poppins.variable} antialiased bg-dark text-light`}>
+                <Header />
                 {children}
+                <Footer />
             </body>
         </html>
     );
