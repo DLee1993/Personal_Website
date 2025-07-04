@@ -10,7 +10,7 @@ export default function Header() {
             </p>
             <div className="flex gap-10">
                 <Menu />
-                <Link href="/contact">Get in touch</Link>
+                <Link href="/contact" className="hidden sm:block">Get in touch</Link>
             </div>
         </header>
     );

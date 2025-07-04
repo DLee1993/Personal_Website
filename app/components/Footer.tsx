@@ -4,8 +4,8 @@ import socials from "@/data/socials.json";
 
 export default function Footer() {
     return (
-        <footer className="p-5 flex justify-between items-end border-t border-light/25">
-            <div className="flex justify-between items-start w-full max-w-2xl">
+        <footer className="p-5 flex flex-wrap justify-between items-end border-t border-light/25 gap-10">
+            <div className="flex flex-wrap justify-between items-start w-full max-w-2xl gap-10">
                 <ul>
                     <li className="font-jetBrains uppercase text-light/50 mb-5">sitemap</li>
                     {pages.map((p, i) => (
