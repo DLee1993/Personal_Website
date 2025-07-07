@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Poppins } from "next/font/google";
-import "./globals.css";
+import { Inter_Tight } from "next/font/google";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import "./globals.css";
+
+const inter = Inter_Tight({
+    subsets: ["latin", "latin-ext"],
+    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
     title: "David Lee | Frontend Developer",
@@ -42,17 +47,6 @@ export const metadata: Metadata = {
     metadataBase: new URL("https://your-portfolio.com"),
 };
 
-const jetBrains = JetBrains_Mono({
-    subsets: ["latin"],
-    variable: "--font-jetBrains",
-});
-
-const poppins = Poppins({
-    subsets: ["latin", "latin-ext"],
-    variable: "--font-poppins",
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
-
 export default function RootLayout({
     children,
 }: Readonly<{
@@ -60,9 +54,54 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${jetBrains.variable} ${poppins.variable} antialiased bg-dark text-light`}>
+            <head>
+                <script
+                    id="jsonld-person-schema"
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Person",
+                            name: "David",
+                            url: "https://your-portfolio.com",
+                            hasPart: [
+                                {
+                                    "@type": "WebApplication",
+                                    name: "Toolbox",
+                                    description:
+                                        "A suite of digital tools designed for accessibility and performance.",
+                                    applicationCategory: "Utility",
+                                },
+                                {
+                                    "@type": "ArtGallery",
+                                    name: "Galleria",
+                                    description:
+                                        "A digital art gallery experience featuring curated works and responsive design.",
+                                },
+                                {
+                                    "@type": "Game",
+                                    name: "Codetype",
+                                    description:
+                                        "A React-based typing game with Framer Motion animations for speed and accuracy.",
+                                    applicationCategory: "EducationalGame",
+                                },
+                                {
+                                    "@type": "WebApplication",
+                                    name: "WordUp",
+                                    description:
+                                        "A modern dictionary application offering searchable definitions and accessibility support.",
+                                    applicationCategory: "ReferenceApplication",
+                                },
+                            ],
+                        }),
+                    }}
+                />
+            </head>
+            <body
+                className={`min-h-screen antialiased bg-light text-dark text-[15px] ${inter.className}`}
+            >
                 <Header />
-                {children}
+                <main>{children}</main>
                 <Footer />
             </body>
         </html>
