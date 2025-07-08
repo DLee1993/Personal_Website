@@ -98,7 +98,7 @@ export default function RootLayout({
                 />
             </head>
             <body
-                className={`min-h-screen antialiased bg-light text-dark text-[15px] ${inter.className}`}
+                className={`min-h-screen antialiased bg-light text-dark text-[15px] px-4 ${inter.className}`}
             >
                 <Header />
                 <main>{children}</main>
