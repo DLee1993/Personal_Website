@@ -20,7 +20,7 @@ export default function ProjectsList() {
 
     return (
         <>
-            <section>
+            <section className="my-20 space-y-10">
                 <SectionHeader text="selected work" />
                 {projects.map((p, i) => (
                     <article
@@ -34,9 +34,7 @@ export default function ProjectsList() {
                                 <h3>{p.title}</h3>
                             </div>
                             <p className="hidden min-[500px]:block">{p.type}</p>
-                            <button className="font-thin text-4xl">
-                                +
-                            </button>
+                            <button className="font-thin text-4xl">+</button>
                         </div>
                         <figure className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
                             {p.images.map((img, i) => (
