@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
     return (
-        <header className="sticky top-0 left-0 py-4 flex justify-between items-center font-medium bg-light">
+        <header className="sticky top-0 left-0 py-4 flex justify-between items-center bg-light">
             <p>David Lee</p>
             <div className="flex justify-between space-x-10 sm:space-x-16 md:space-x-20">
                 <p className="text-dark/50 hidden sm:block">Cardiff, United Kingdom</p>
