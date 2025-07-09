@@ -25,10 +25,10 @@ export default function ProjectsList() {
                 {projects.map((p, i) => (
                     <article
                         key={i}
-                        className="cursor-pointer group"
+                        className="relative cursor-pointer group"
                         onClick={() => setSelectedProject(p)}
                     >
-                        <div className="flex justify-between items-center">
+                        <div className="sticky top-10 z-40 flex justify-between items-center bg-light">
                             <div className="flex items-baseline gap-2">
                                 <p className="text-[10px]">{`0${i + 1}`}</p>
                                 <h3>{p.title}</h3>
