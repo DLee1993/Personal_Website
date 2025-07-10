@@ -25,7 +25,7 @@ export default function ProjectsList() {
                 {projects.map((p, i) => (
                     <article
                         key={i}
-                        className="relative cursor-pointer group"
+                        className="cursor-pointer group"
                         onClick={() => setSelectedProject(p)}
                     >
                         <div className="sticky top-16 z-40 flex justify-between items-center bg-light">
@@ -34,7 +34,7 @@ export default function ProjectsList() {
                                 <h3>{p.title}</h3>
                             </div>
                             <p className="hidden min-[500px]:block">{p.type}</p>
-                            <button className="font-thin text-4xl">+</button>
+                            <button className="font-thin text-4xl cursor-pointer">+</button>
                         </div>
                         <figure className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
                             {p.images.map((img, i) => (
