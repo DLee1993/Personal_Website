@@ -1,9 +1,15 @@
+import SectionHeader from "@/app/components/SectionHeader";
 import opensource from "@/data/openSource.json";
 import Link from "next/link";
 
 export default function OpenSourceList() {
     return (
-        <section>
+        <section className="my-10 space-y-10">
+            <SectionHeader text="open source contributions" />
+            <p className="max-w-2xl">
+                Contributing to open-source projects has been an invaluable learning experience,
+                shaping my understanding of software development beyond just writing code.
+            </p>
             <ul className="text-sm">
                 {opensource.map((ops, i) => (
                     <li key={i}>
@@ -11,7 +17,9 @@ export default function OpenSourceList() {
                             href={ops.url}
                             className="relative flex justify-between items-center px-2 h-12 border-t border-dark/10 group"
                         >
-                            <h4 className="group-hover:text-light duration-300 delay-150">{ops.title}</h4>
+                            <h4 className="group-hover:text-light duration-300 delay-150">
+                                {ops.title}
+                            </h4>
                             <p className="hidden sm:block w-full max-w-sm group-hover:text-light duration-300 delay-150">
                                 {ops.description}
                             </p>
