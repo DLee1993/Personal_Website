@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="border-t border-dark/10 min-h-[350px] flex flex-col justify-around">
+        <footer className="border-t border-dark/10 h-[350px] md:h-[300px] flex flex-col justify-around">
             <div className="flex flex-wrap justify-between items-start gap-10">
                 <div className="flex flex-wrap gap-20">
                     <ul>
@@ -42,7 +42,7 @@ export default function Footer() {
                         </Link>
                     </span>
                 </p>
-                <p className="text-dark/50">Cardiff, United Kingdom</p>
+                <p className="text-dark/50 hidden md:block">Cardiff, United Kingdom</p>
             </div>
             <div className="flex justify-between items-start gap-10 flex-wrap">
                 <p className="group flex gap-1 cursor-pointer">
