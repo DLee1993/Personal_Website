@@ -55,7 +55,7 @@ export default function OpenSourceList() {
                                     </svg>
                                 </div>
                             </div>
-                            <div className="absolute top-1/2 left-0 -translate-y-1/2 -z-10 w-full h-0 group-hover:h-full transition-all bg-dark duration-500"></div>
+                            <div className="absolute top-1/2 left-0 -translate-y-1/2 -z-10 w-full h-0 motion-safe:group-hover:h-full transition-all bg-dark duration-300"></div>
                         </Link>
                     </li>
                 ))}
