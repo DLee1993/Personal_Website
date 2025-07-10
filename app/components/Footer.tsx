@@ -37,7 +37,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <p className="font-semibold">
-                    Like what you see?{" "}
+                    Would you like to know more?{" "}
                     <span className="font-normal">
                         <Link
                             href="/contact"
