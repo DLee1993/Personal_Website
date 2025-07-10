@@ -17,6 +17,7 @@ export type Project = {
 
 export default function ProjectsList() {
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+    const [popupOpen, setPopupOpen] = useState(false);
 
     return (
         <>
@@ -26,7 +27,10 @@ export default function ProjectsList() {
                     <article
                         key={i}
                         className="cursor-pointer group"
-                        onClick={() => setSelectedProject(p)}
+                        onClick={() => {
+                            setSelectedProject(p);
+                            setPopupOpen(!popupOpen);
+                        }}
                     >
                         <div className="sticky top-16 z-40 flex justify-between items-center bg-light">
                             <div className="flex items-baseline gap-2">
@@ -51,7 +55,7 @@ export default function ProjectsList() {
                 ))}
             </section>
 
-            {selectedProject && <ProjectView project={selectedProject} />}
+            <ProjectView project={selectedProject!} open={popupOpen} setOpen={setPopupOpen} />
         </>
     );
 }
