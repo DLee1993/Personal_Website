@@ -1,3 +1,87 @@
+import pageLinks from "@/data/pages.json";
+import socialLinks from "@/data/socials.json";
+import Link from "next/link";
+
 export default function Footer() {
-    return <footer>footer</footer>;
+    return (
+        <footer className="border-t border-dark/10 min-h-[350px] flex flex-col justify-around">
+            <div className="flex flex-wrap justify-between items-start gap-10">
+                <div className="flex flex-wrap gap-20">
+                    <ul>
+                        <li className="mb-2.5 font-semibold">Sitemap</li>
+                        {pageLinks.map((l, i) => (
+                            <li key={i}>
+                                <Link
+                                    href={l.src}
+                                    className="relative capitalize after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                                >
+                                    {l.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                    <ul>
+                        <li className="mb-2.5 font-semibold">Digital spaces</li>
+                        {socialLinks.map((l, i) => (
+                            <li key={i}>
+                                <Link
+                                    href={l.src}
+                                    className="relative capitalize after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-neutral-800 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100"
+                                >
+                                    {l.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <p className="font-semibold">
+                    Like what you see?{" "}
+                    <span className="font-normal">
+                        <Link href="/contact" className="underline">
+                            Start a conversation
+                        </Link>
+                    </span>
+                </p>
+                <p className="text-dark/50">Cardiff, United Kingdom</p>
+            </div>
+            <div className="flex justify-between items-start gap-10 flex-wrap">
+                <p className="group flex gap-1 cursor-pointer">
+                    <span>Scroll to top</span>
+                    <span className="block relative h-5 w-5 overflow-hidden">
+                        <span className="absolute transition-all duration-300 group-hover:-translate-y-5">
+                            <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 15 15"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-5 w-5 fill-dark -rotate-45"
+                            >
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
+                                ></path>
+                            </svg>
+                            <svg
+                                width="15"
+                                height="15"
+                                viewBox="0 0 15 15"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                className="h-5 w-5 -rotate-45 fill-dark"
+                            >
+                                <path
+                                    d="M3.64645 11.3536C3.45118 11.1583 3.45118 10.8417 3.64645 10.6465L10.2929 4L6 4C5.72386 4 5.5 3.77614 5.5 3.5C5.5 3.22386 5.72386 3 6 3L11.5 3C11.6326 3 11.7598 3.05268 11.8536 3.14645C11.9473 3.24022 12 3.36739 12 3.5L12 9.00001C12 9.27615 11.7761 9.50001 11.5 9.50001C11.2239 9.50001 11 9.27615 11 9.00001V4.70711L4.35355 11.3536C4.15829 11.5488 3.84171 11.5488 3.64645 11.3536Z"
+                                    fillRule="evenodd"
+                                    clipRule="evenodd"
+                                ></path>
+                            </svg>
+                        </span>
+                    </span>
+                </p>
+                <p>David Lee &copy; 2025</p>
+            </div>
+        </footer>
+    );
 }
