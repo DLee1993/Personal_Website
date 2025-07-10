@@ -1,3 +1,5 @@
+"use client"
+
 import pageLinks from "@/data/pages.json";
 import socialLinks from "@/data/socials.json";
 import Link from "next/link";
@@ -48,7 +50,10 @@ export default function Footer() {
                 <p className="text-dark/50 hidden md:block">Cardiff, United Kingdom</p>
             </div>
             <div className="flex justify-between items-start gap-10 flex-wrap">
-                <p className="group flex gap-1 cursor-pointer">
+                <p
+                    className="group flex gap-1 cursor-pointer"
+                    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                >
                     <span>Scroll to top</span>
                     <span className="block relative h-5 w-5 overflow-hidden">
                         <span className="absolute transition-all duration-300 group-hover:-translate-y-5">
