@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function OpenSourceList() {
     return (
-        <section className="my-10 space-y-10">
+        <section>
             <SectionHeader text="open source contributions" />
             <p className="max-w-2xl">
                 Contributing to open-source projects has been an invaluable learning experience,
                 shaping my understanding of software development beyond just writing code.
             </p>
-            <ul className="text-sm">
+            <ul className="text-sm mt-10">
                 {opensource.map((ops, i) => (
                     <li key={i}>
                         <Link
