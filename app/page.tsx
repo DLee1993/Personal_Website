@@ -1,6 +1,5 @@
 import OpenSourceList from "@/app/components/OpenSourceList";
 import ProjectsList from "@/app/components/ProjectsList";
-import SectionHeader from "@/app/components/SectionHeader";
 import Link from "next/link";
 
 export default function Home() {
@@ -14,14 +13,7 @@ export default function Home() {
                 </h1>
             </div>
             <ProjectsList />
-            <section className="my-20 space-y-10">
-                <SectionHeader text="open source contributions" />
-                <p className="max-w-2xl">
-                    Contributing to open-source projects has been an invaluable learning experience,
-                    shaping my understanding of software development beyond just writing code.
-                </p>
-                <OpenSourceList />
-            </section>
+            <OpenSourceList />
             <section className="min-h-[50vh] flex justify-center items-center">
                 <Link href="/information" className="flex justify-center items-center gap-2 group">
                     <article>
