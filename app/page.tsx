@@ -21,7 +21,7 @@ export default function Home() {
                         <p className="text-5xl min-[500px]:text-6xl md:text-8xl">About me</p>
                     </article>
                     <div className="relative h-10 w-10 overflow-hidden">
-                        <div className="absolute transition-all duration-300 group-hover:-translate-y-10 group-hover:translate-x-8">
+                        <div className="absolute transition-all duration-300 group-hover:-translate-y-5 md:group-hover:-translate-y-10 group-hover:translate-x-8">
                             <svg
                                 width="15"
                                 height="15"
