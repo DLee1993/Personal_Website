@@ -11,8 +11,8 @@ export default function OpenSourceList() {
                             href={ops.url}
                             className="relative flex justify-between items-center px-2 h-12 border-t border-dark/10 group"
                         >
-                            <h4 className="group-hover:text-light duration-300">{ops.title}</h4>
-                            <p className="hidden sm:block w-full max-w-sm group-hover:text-light duration-300">
+                            <h4 className="group-hover:text-light duration-300 delay-150">{ops.title}</h4>
+                            <p className="hidden sm:block w-full max-w-sm group-hover:text-light duration-300 delay-150">
                                 {ops.description}
                             </p>
                             <div className="relative ml-1 h-5 w-5 overflow-hidden">
