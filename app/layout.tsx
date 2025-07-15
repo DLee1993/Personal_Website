@@ -3,6 +3,7 @@ import { Inter_Tight } from "next/font/google";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import "./globals.css";
+import Menu from "@/app/components/Menu";
 
 const inter = Inter_Tight({
     subsets: ["latin", "latin-ext"],
@@ -101,6 +102,7 @@ export default function RootLayout({
                 className={`min-h-screen antialiased bg-light text-dark text-[14px] sm:text-[15px] 2xl:text-base px-4 font-medium ${inter.className}`}
             >
                 <Header />
+                <Menu />
                 <main>{children}</main>
                 <Footer />
             </body>
