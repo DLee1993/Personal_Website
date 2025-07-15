@@ -1,5 +1,4 @@
 import socialLinks from "@/data/socials.json";
-import Menu from "@/app/components/Menu";
 import Link from "next/link";
 
 export default function Header() {
@@ -19,7 +18,6 @@ export default function Header() {
                         ))}
                     </ul>
                 </div>
-                <Menu />
             </div>
         </header>
     );
