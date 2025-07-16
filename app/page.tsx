@@ -9,7 +9,7 @@ export default function Home() {
                 <h1 className="text-base sm:text-lg max-w-2xl">
                     A React-based developer focused on building websites that go beyond
                     aesthetics—building sites that serve, inform, and engage. I code with the
-                    intention to create meaningful, lasting impact.
+                    intention to create a meaningful, lasting impact.
                 </h1>
             </div>
             <ProjectsList />
