@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="border-t border-dark/10 h-[350px] md:h-[300px] flex flex-col justify-around">
+        <footer className="border-t border-dark/10 h-[350px] md:h-[275px] flex flex-col justify-around">
             <div className="flex flex-wrap justify-between items-start gap-10">
                 <div className="flex flex-wrap gap-20">
                     <ul className="space-y-1">
@@ -23,7 +23,7 @@ export default function Footer() {
                         <li className="mb-2.5 font-semibold">Digital spaces</li>
                         {socialLinks.map((l, i) => (
                             <li key={i}>
-                                <Link href={l.src} className="customUnderlineDark">
+                                <Link href={l.src} target="_blank" className="customUnderlineDark">
                                     {l.title}
                                 </Link>
                             </li>
