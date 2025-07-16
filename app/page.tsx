@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <section className="space-y-20">
+        <section className="space-y-10">
             <div className="min-h-[50vh] flex items-center">
                 <h1 className="text-base sm:text-lg max-w-2xl">
                     A React-based developer focused on building websites that go beyond
