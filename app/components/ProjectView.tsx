@@ -24,11 +24,6 @@ export default function ProjectView({
         gsap.to("#popup", {
             y: open ? 0 : "100%",
         });
-        if (open) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "auto";
-        }
     }, [open]);
 
     return (
@@ -60,9 +55,9 @@ export default function ProjectView({
                         </Link>
                     </div>
                 </article>
-                <figure className="space-y-5 columns-2 md:columns-1">
+                <figure className="space-y-5 columns-2 md:columns-1 flex flex-col justify-center items-center">
                     {project?.images.map((img, i) => (
-                        <img src={img.src} alt={img.caption} key={i} className="w-full" />
+                        <img src={img.src} alt={img.caption} key={i} className="w-10/12" />
                     ))}
                 </figure>
             </section>
