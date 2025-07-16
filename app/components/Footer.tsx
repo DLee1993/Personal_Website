@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className="border-t border-dark/10 h-[350px] md:h-[300px] flex flex-col justify-around">
             <div className="flex flex-wrap justify-between items-start gap-10">
                 <div className="flex flex-wrap gap-20">
-                    <ul>
+                    <ul className="space-y-1">
                         <li className="mb-2.5 font-semibold">Sitemap</li>
                         {pageLinks.map((l, i) => (
                             <li key={i}>
@@ -19,7 +19,7 @@ export default function Footer() {
                             </li>
                         ))}
                     </ul>
-                    <ul>
+                    <ul className="space-y-1">
                         <li className="mb-2.5 font-semibold">Digital spaces</li>
                         {socialLinks.map((l, i) => (
                             <li key={i}>
