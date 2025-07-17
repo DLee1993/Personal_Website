@@ -15,6 +15,7 @@ export default function OpenSourceList() {
                     <li key={i}>
                         <Link
                             href={ops.url}
+                            target="_blank"
                             className="relative flex justify-between items-center px-2 h-12 border-t border-dark/10 group"
                         >
                             <h4>{ops.title}</h4>
