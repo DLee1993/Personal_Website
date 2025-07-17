@@ -62,6 +62,7 @@ export default function Menu() {
                             <li key={i}>
                                 <Link
                                     href={l.src}
+                                    aria-label={`This is a link to the ${l.title} website page`}
                                     className={
                                         pathname === l.src
                                             ? "text-light"
@@ -81,7 +82,7 @@ export default function Menu() {
                             Digital spaces
                         </li>
                         {socialLinks.map((l, i) => (
-                            <li key={i} role="link">
+                            <li key={i}>
                                 <Link
                                     href={l.src}
                                     target="_blank"

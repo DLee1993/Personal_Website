@@ -36,7 +36,7 @@ export default function ProjectsList() {
                         <div className="sticky top-16 z-40 flex justify-between items-center bg-light">
                             <div className="flex items-baseline gap-2">
                                 <p className="text-[10px]">{`0${i + 1}`}</p>
-                                <h3>{p.title}</h3>
+                                <h2>{p.title}</h2>
                             </div>
                             <p className="hidden min-[500px]:block">{p.type}</p>
                             <button className="font-thin text-4xl cursor-pointer">+</button>

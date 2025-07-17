@@ -18,7 +18,7 @@ export default function OpenSourceList() {
                             target="_blank"
                             className="relative flex justify-between items-center px-2 h-12 border-t border-dark/10 group"
                         >
-                            <h4>{ops.title}</h4>
+                            <h3>{ops.title}</h3>
                             <p className="hidden sm:block w-full max-w-sm">{ops.description}</p>
                             <div className="relative ml-1 h-5 w-5 overflow-hidden">
                                 <div className="absolute transition-all duration-300 group-hover:-translate-y-5 group-hover:translate-x-4">
