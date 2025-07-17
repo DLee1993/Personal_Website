@@ -14,7 +14,7 @@ export default function Home() {
             </div>
             <ProjectsList />
             <OpenSourceList />
-            <section className="min-h-[50vh] flex justify-center items-center">
+            <section className="min-h-[40vh] md:min-h-[50vh] flex justify-center items-center">
                 <Link href="/information" className="flex justify-center items-center gap-2 group">
                     <article>
                         <sup>Next page</sup>
