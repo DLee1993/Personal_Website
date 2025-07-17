@@ -26,7 +26,7 @@ export default function ProjectsList() {
                 {projects.map((p, i) => (
                     <article
                         key={i}
-                        className="cursor-pointer group"
+                        className="group"
                         onClick={() => {
                             setSelectedProject(p);
                             setPopupOpen(!popupOpen);
