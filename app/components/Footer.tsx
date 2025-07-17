@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="border-t border-dark/10 h-[350px] md:h-[275px] flex flex-col justify-around">
+        <footer className="border-t border-dark/10 h-[350px] md:h-[275px] flex flex-col justify-around mb-10 md:mb-0">
             <div className="flex flex-wrap justify-between items-start gap-10">
                 <div className="flex flex-wrap gap-20">
                     <ul className="space-y-1">
