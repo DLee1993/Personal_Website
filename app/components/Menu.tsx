@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import pageLinks from "@/data/pages.json";
@@ -19,8 +19,8 @@ export default function Menu() {
     };
 
     useGSAP(() => {
-        gsap.to("menu", {
-            height: menuState ? "250px" : "44px",
+        gsap.to("#menu", {
+            height: menuState ? "300px" : "44px",
             ease: "power2.inOut",
             duration: 0.75,
         });
@@ -30,9 +30,12 @@ export default function Menu() {
     }, [menuState]);
 
     return (
-        <menu className="fixed bottom-5 left-1/2 -translate-x-1/2 w-11/12 max-w-lg h-11 bg-dark/80 backdrop-blur-lg text-light rounded-sm z-50 overflow-hidden flex flex-col justify-between">
+        <section
+            id="menu"
+            className="fixed bottom-5 left-1/2 -translate-x-1/2 w-[95%] max-w-lg h-11 bg-dark/80 backdrop-blur-lg text-light rounded-sm z-50 overflow-hidden flex flex-col"
+        >
             <header
-                className="flex justify-between items-center h-12 border-b border-light/15 px-2"
+                className="flex justify-between items-center h-11 border-b border-light/15 px-2"
                 onClick={toggleMenuState}
             >
                 <p className="text-light/50 flex justify-center items-center gap-2">
@@ -46,10 +49,15 @@ export default function Menu() {
                     +
                 </button>
             </header>
-            <section className="p-4 flex justify-between items-start min-h-40 flex-wrap gap-10">
+            <section className="p-4 flex justify-between items-start flex-wrap flex-1 gap-10">
                 <div className="flex flex-wrap gap-20">
                     <ul className="space-y-1">
-                        <li className="mb-2.5 font-semibold">Sitemap</li>
+                        <li
+                            className="mb-2.5 font-semibold"
+                            aria-label="list of pages you can visit in this website"
+                        >
+                            Sitemap
+                        </li>
                         {pageLinks.map((l, i) => (
                             <li key={i}>
                                 <Link
@@ -66,11 +74,17 @@ export default function Menu() {
                         ))}
                     </ul>
                     <ul className="space-y-1">
-                        <li className="mb-2.5 font-semibold">Digital spaces</li>
+                        <li
+                            className="mb-2.5 font-semibold"
+                            aria-label="list of my social media profiles"
+                        >
+                            Digital spaces
+                        </li>
                         {socialLinks.map((l, i) => (
-                            <li key={i}>
+                            <li key={i} role="link">
                                 <Link
                                     href={l.src}
+                                    target="_blank"
                                     className="w-fit flex justify-start items-center gap-2 customUnderlineLight"
                                 >
                                     {l.title}
@@ -86,9 +100,9 @@ export default function Menu() {
                     Start a conversation
                 </Link>
             </section>
-            <footer className="flex items-center h-12 border-t border-light/15 px-2">
-                <p className="text-light/50">David Lee &copy; 2025</p>
+            <footer className="flex items-center min-h-12 border-t border-light/15 px-2">
+                <p className="text-light/50 text-xs">David Lee &copy; 2025</p>
             </footer>
-        </menu>
+        </section>
     );
 }
