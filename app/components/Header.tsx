@@ -7,7 +7,7 @@ export default function Header() {
             <p>David Lee</p>
             <div className="flex justify-between space-x-10 sm:space-x-16 md:space-x-40">
                 <div className="flex justify-between min-[500px]:space-x-8 md:space-x-14">
-                    <p className="text-dark/50 block">Cardiff, United Kingdom</p>
+                    <p className="text-dark/75 block">Cardiff, United Kingdom</p>
                     <ul className="hidden min-[500px]:flex gap-5">
                         {socialLinks.map((l, i) => (
                             <li key={i}>

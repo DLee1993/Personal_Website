@@ -15,7 +15,7 @@ export default function Home() {
             <ProjectsList />
             <OpenSourceList />
             <section className="min-h-[40vh] md:min-h-[50vh] flex justify-center items-center">
-                <Link href="/information" className="flex justify-center items-center gap-2 group">
+                <Link href="/information" aria-label="Link to the information page" className="flex justify-center items-center gap-2 group">
                     <article>
                         <sup>Next page</sup>
                         <p className="text-5xl min-[500px]:text-6xl md:text-8xl">About me</p>

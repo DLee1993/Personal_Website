@@ -13,7 +13,7 @@ export default function Footer() {
                         <li className="mb-2.5 font-semibold">Sitemap</li>
                         {pageLinks.map((l, i) => (
                             <li key={i}>
-                                <Link href={l.src} className="customUnderlineDark">
+                                <Link href={l.src} aria-label={`This is a link to the ${l.title} website page`} className="customUnderlineDark">
                                     {l.title}
                                 </Link>
                             </li>
@@ -38,7 +38,7 @@ export default function Footer() {
                         </Link>
                     </span>
                 </p>
-                <p className="text-dark/50 hidden md:block">Cardiff, United Kingdom</p>
+                <p className="text-dark/75 hidden md:block">Cardiff, United Kingdom</p>
             </div>
             <div className="flex justify-between items-start gap-10 flex-wrap">
                 <p
