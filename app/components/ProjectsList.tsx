@@ -12,6 +12,7 @@ export type Project = {
     url: string;
     repository: string;
     description: string;
+    techStack: string[];
     images: { src: string; caption: string }[];
 };
 
