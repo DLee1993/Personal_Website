@@ -1,4 +1,8 @@
+"use client";
+
+import Link from "next/link";
 import personal from "@/data/personal.json";
+import externalDocs from "@/data/externalDocs.json";
 
 export default function Information() {
     return (
@@ -20,7 +24,13 @@ export default function Information() {
                         </p>
                     </h1>
                 </article>
-                <p className="customUnderlineDark cursor-pointer">View Resume</p>
+                <Link
+                    href={externalDocs[0].resume}
+                    target="_blank"
+                    className="customUnderlineDark cursor-pointer"
+                >
+                    View Resume
+                </Link>
             </section>
             <section className="flex flex-wrap gap-10 sm:gap-20 md:gap-32 lg:gap-40">
                 {personal.map((p, i) => (
