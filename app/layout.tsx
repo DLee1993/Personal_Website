@@ -99,7 +99,7 @@ export default function RootLayout({
                 />
             </head>
             <body
-                className={`min-h-screen antialiased bg-light text-dark text-sm 2xl:text-base px-2 sm:px-4 font-medium ${inter.className}`}
+                className={`min-h-screen antialiased overflow-x-hidden bg-light text-dark text-sm 2xl:text-base px-2 sm:px-4 font-medium ${inter.className}`}
             >
                 <Header />
                 <Menu />
