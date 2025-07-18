@@ -44,7 +44,7 @@ export default function ProjectView({
                     <span className="inline-block rotate-45">+</span>
                 </button>
             </nav>
-            <section className="w-full h-full flex flex-col md:flex-row justify-between items-start px-2 sm:px-4 md:px-5 overflow-y-scroll gap-10">
+            <section className="w-full h-full flex flex-col md:flex-row justify-between items-start px-4 md:px-5 overflow-y-scroll gap-10">
                 <article className="md:max-w-1/2 md:sticky top-0 space-y-10">
                     <div>
                         <sup className="text-xs text-light/50">{project?.type}</sup>
@@ -63,7 +63,7 @@ export default function ProjectView({
                             ))}
                         </ul>
                     </div>
-                    <div className="space-x-10">
+                    <div className="space-x-7 md:space-x-10 flex justify-end items-center">
                         <Link
                             href={project ? project.url : ""}
                             className="border border-light px-4 py-2 text-xs sm:text-sm rounded-md hover:text-dark hover:bg-light"
