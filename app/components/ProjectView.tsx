@@ -23,6 +23,8 @@ export default function ProjectView({
     useGSAP(() => {
         gsap.to("#popup", {
             y: open ? 0 : "100%",
+            ease: "power2.inOut",
+            duration: 0.75,
         });
         gsap.to(document.body, {
             overflowY: open ? "hidden" : "auto",
@@ -68,7 +70,10 @@ export default function ProjectView({
                         >
                             Visit the site
                         </Link>
-                        <Link href={project ? project.repository : ""} className="customUnderlineLight text-xs sm:text-sm">
+                        <Link
+                            href={project ? project.repository : ""}
+                            className="customUnderlineLight text-xs sm:text-sm"
+                        >
                             View the code
                         </Link>
                     </div>
