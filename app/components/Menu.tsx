@@ -63,6 +63,7 @@ export default function Menu() {
                                 <Link
                                     href={l.src}
                                     aria-label={`This is a link to the ${l.title} website page`}
+                                    onClick={toggleMenuState}
                                     className={
                                         pathname === l.src
                                             ? "text-light"
