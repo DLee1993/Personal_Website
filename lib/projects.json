@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Your Ultimate Digital Companion",
+        "type": "Web app - Digital tools",
+        "url": "https://www.google.com",
+        "repository": "https://www.github.com",
+        "description": "A suite of accessible, performance-focused digital tools.  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+        "techStack": ["react", "next.js", "tailwindcss", "shadcn ui"],
+        "images": [
+            {
+                "src": "https://images.unsplash.com/photo-1752035197224-6e6bdc4f7fb1?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "001.jpg"
+            },
+            {
+                "src": "https://images.unsplash.com/photo-1751885276959-12abce080b99?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "002.jpg"
+            },
+            {
+                "src": "https://images.unsplash.com/photo-1751640295309-d807c9bf7282?q=80&w=465&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "003.jpg"
+            },
+
+            {
+                "src": "https://images.unsplash.com/photo-1631003020763-02f962bbb174?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "004.jpg"
+            }
+        ]
+    },
+    {
+        "title": "Codetype",
+        "type": "Web app - Digital tools",
+        "url": "https://www.google.com",
+        "repository": "https://www.github.com",
+        "description": "A suite of accessible, performance-focused digital tools.  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+        "techStack": ["react", "next.js", "tailwindcss", "shadcn ui"],
+        "images": [
+            {
+                "src": "https://images.unsplash.com/photo-1750440017810-41f1fe3b88d2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "001.jpg"
+            },
+            {
+                "src": "https://images.unsplash.com/photo-1751465912427-9ac7cd7bfa12?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "002.jpg"
+            },
+            {
+                "src": "https://images.unsplash.com/photo-1751786210867-a886b5996bf2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "003.jpg"
+            },
+
+            {
+                "src": "https://plus.unsplash.com/premium_photo-1747851400213-5140b43aee3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D",
+                "caption": "004.jpg"
+            }
+        ]
+    }
+]

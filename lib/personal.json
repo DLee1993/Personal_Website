@@ -1,0 +1,35 @@
+[
+    {
+        "listHeader": "What I can offer you",
+        "listItems": [
+            "Altruistic team player",
+            "Unparalleled work ethic",
+            "Lighthearted energy",
+            ""
+        ]
+    },
+    {
+        "listHeader": "My Personal Focus",
+        "listItems": [
+            "Positive web accessibility practices",
+            "Cost effective solutions",
+            "Digital Equity"
+        ]
+    },
+    {
+        "listHeader": "Some of my Technical Expertise",
+        "listItems": [
+            "html, jsx",
+            "css, tailwind css",
+            "javascript, react, next.js",
+            "typescript",
+            "sentry",
+            "kinde auth",
+            "neon postgress",
+            "drizzle orm",
+            "zod",
+            "tan stack",
+            "shadcn ui, mantine ui, radix ui, react aria"
+        ]
+    }
+]
