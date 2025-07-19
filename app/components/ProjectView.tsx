@@ -66,12 +66,14 @@ export default function ProjectView({
                     <div className="space-x-7 md:space-x-10 flex justify-end items-center">
                         <Link
                             href={project ? project.url : ""}
+                            target="_blank"
                             className="border border-light px-4 py-2 text-xs sm:text-sm rounded-md hover:text-dark hover:bg-light"
                         >
                             Visit the site
                         </Link>
                         <Link
                             href={project ? project.repository : ""}
+                            target="_blank"
                             className="customUnderlineLight text-xs sm:text-sm"
                         >
                             View the code
