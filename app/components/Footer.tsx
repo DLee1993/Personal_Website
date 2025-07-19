@@ -15,6 +15,7 @@ export default function Footer() {
                             <li key={i}>
                                 <Link href={l.src} aria-label={`This is a link to the ${l.title} website page`} title={`This is a link to the ${l.title} website page`} className="customUnderlineDark">
                                     {l.title}
+                                    <span className="sr-only">{`this is a link to the ${l.title} page of the website`}</span>
                                 </Link>
                             </li>
                         ))}
