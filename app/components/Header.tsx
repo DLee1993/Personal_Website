@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
     return (
         <header className="sticky top-0 left-0 h-16 flex justify-between items-center bg-light z-50">
-            <p>David Lee</p>
+            <Link href={"/"}>David Lee</Link>
             <div className="flex justify-between space-x-10 sm:space-x-16 md:space-x-40">
                 <div className="flex justify-between min-[500px]:space-x-8 md:space-x-14">
                     <p className="text-dark/75 block">Cardiff, United Kingdom</p>
