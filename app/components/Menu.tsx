@@ -24,7 +24,7 @@ export default function Menu() {
             ease: "power2.inOut",
             duration: 0.75,
         });
-        gsap.to("button", {
+        gsap.to("#menu button", {
             rotate: menuState ? "45deg" : "0deg",
         });
     }, [menuState]);
