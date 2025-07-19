@@ -39,7 +39,6 @@ export default function Footer() {
                         </Link>
                     </span>
                 </p>
-                <p className="text-dark/75 hidden md:block">Cardiff, United Kingdom</p>
             </div>
             <div className="flex justify-between items-start gap-10 flex-wrap">
                 <p
