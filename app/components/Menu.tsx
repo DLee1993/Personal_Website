@@ -38,7 +38,7 @@ export default function Menu() {
                 className="flex justify-between items-center h-11 border-b border-light/15 px-2"
                 onClick={toggleMenuState}
             >
-                <p className="text-light/50 flex justify-center items-center gap-2">
+                <p className="text-light flex justify-center items-center gap-2">
                     Available for work{" "}
                     <span className="block size-1.5 rounded-full bg-green-500"></span>
                 </p>
