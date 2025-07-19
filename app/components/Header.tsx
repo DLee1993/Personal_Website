@@ -1,4 +1,4 @@
-import socialLinks from "@/data/socials.json";
+import socialLinks from "@/lib/data/socials.json";
 import Link from "next/link";
 
 export default function Header() {

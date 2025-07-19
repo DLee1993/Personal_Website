@@ -1,5 +1,5 @@
 import SectionHeader from "@/app/components/SectionHeader";
-import opensource from "@/data/openSource.json";
+import opensource from "@/lib/data/openSource.json";
 import Link from "next/link";
 
 export default function OpenSourceList() {

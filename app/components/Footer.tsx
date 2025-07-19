@@ -1,7 +1,7 @@
 "use client";
 
-import pageLinks from "@/data/pages.json";
-import socialLinks from "@/data/socials.json";
+import pageLinks from "@/lib/data/pages.json";
+import socialLinks from "@/lib/data/socials.json";
 import Link from "next/link";
 
 export default function Footer() {
@@ -13,7 +13,12 @@ export default function Footer() {
                         <li className="mb-2.5 font-semibold">Sitemap</li>
                         {pageLinks.map((l, i) => (
                             <li key={i}>
-                                <Link href={l.src} aria-label={`This is a link to the ${l.title} website page`} title={`This is a link to the ${l.title} website page`} className="customUnderlineDark">
+                                <Link
+                                    href={l.src}
+                                    aria-label={`This is a link to the ${l.title} website page`}
+                                    title={`This is a link to the ${l.title} website page`}
+                                    className="customUnderlineDark"
+                                >
                                     {l.title}
                                     <span className="sr-only">{`this is a link to the ${l.title} page of the website`}</span>
                                 </Link>

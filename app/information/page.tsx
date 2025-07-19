@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import personal from "@/data/personal.json";
-import externalDocs from "@/data/externalDocs.json";
+import personal from "@/lib/data/personal.json";
+import externalDocs from "@/lib/data/externalDocs.json";
 
 export default function Information() {
     return (
