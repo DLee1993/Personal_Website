@@ -2,7 +2,7 @@
 "use client";
 
 import { useState } from "react";
-import projects from "@/lib/data/projects.json";
+import projects from "@/lib//projects.json";
 import ProjectView from "@/app/components/ProjectView";
 import SectionHeader from "@/app/components/SectionHeader";
 

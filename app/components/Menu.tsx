@@ -5,8 +5,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import pageLinks from "@/lib/data/pages.json";
-import socialLinks from "@/lib/data/socials.json";
+import pageLinks from "@/lib//pages.json";
+import socialLinks from "@/lib//socials.json";
 
 gsap.registerPlugin(useGSAP);
 
