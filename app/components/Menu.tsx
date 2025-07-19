@@ -55,6 +55,7 @@ export default function Menu() {
                         <li
                             className="text-xs text-light/75 mb-3"
                             aria-label="list of pages you can visit in this website"
+                            title="list of pages you can visit in this website"
                         >
                             Sitemap
                         </li>
@@ -63,6 +64,7 @@ export default function Menu() {
                                 <Link
                                     href={l.src}
                                     aria-label={`This is a link to the ${l.title} website page`}
+                                    title={`This is a link to the ${l.title} website page`}
                                     onClick={toggleMenuState}
                                     className={
                                         pathname === l.src

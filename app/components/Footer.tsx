@@ -13,7 +13,7 @@ export default function Footer() {
                         <li className="mb-2.5 font-semibold">Sitemap</li>
                         {pageLinks.map((l, i) => (
                             <li key={i}>
-                                <Link href={l.src} aria-label={`This is a link to the ${l.title} website page`} className="customUnderlineDark">
+                                <Link href={l.src} aria-label={`This is a link to the ${l.title} website page`} title={`This is a link to the ${l.title} website page`} className="customUnderlineDark">
                                     {l.title}
                                 </Link>
                             </li>
