@@ -22,7 +22,7 @@
 
     input {
         display: block;
-        padding: 10px 5px;
+        padding: 10px 2px;
         min-height: 30px;
         width: 100%;
         border-bottom: 1px solid #181818;
@@ -33,7 +33,7 @@
         display: block;
         min-height: 100px;
         width: 100%;
-        padding: 10px 5px;
+        padding: 10px 2px;
         resize: none;
         font-size: 14px;
         background-color: transparent;
@@ -47,6 +47,7 @@
     }
 
     label {
+        min-width: 205px;
         position: absolute;
         top: 0.7rem;
         left: 0;
@@ -62,15 +63,13 @@
 
     input:focus + label,
     input:not(:placeholder-shown) + label {
-        transform: translateY(-20px) translateX(-10px) scale(0.75);
-        background-color: #fff9fb;
+        transform: translateY(-30px) translateX(-25px) scale(0.75);
         color: hsla(0, 0%, 9%, 50%);
     }
 
     textarea:focus + label,
     textarea:not(:placeholder-shown) + label {
-        transform: translateY(-20px) translateX(-20px) scale(0.75);
-        background-color: #fff9fb;
+        transform: translateY(-20px) translateX(-25px) scale(0.75);
         color: hsla(0, 0%, 9%, 50%);
     }
 }
@@ -81,5 +80,8 @@
     }
     .customUnderlineDark {
         @apply relative after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-dark after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100;
+    }
+    .error {
+        @apply border-red-500 focus:border-red-500;
     }
 }
