@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "Your ultimate digital companion",
         "type": "Web app - Digital tools",
         "url": "https://www.google.com",
@@ -27,6 +28,7 @@
         ]
     },
     {
+        "id": 2,
         "title": "Where speed meets syntax",
         "type": "Web app - Game",
         "url": "https://www.google.com",
