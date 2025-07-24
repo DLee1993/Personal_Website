@@ -1,6 +1,6 @@
 [
     {
-        "title": "Your Ultimate Digital Companion",
+        "title": "Your ultimate digital companion",
         "type": "Web app - Digital tools",
         "url": "https://www.google.com",
         "repository": "https://www.github.com",
@@ -27,8 +27,8 @@
         ]
     },
     {
-        "title": "Codetype",
-        "type": "Web app - Digital tools",
+        "title": "Where speed meets syntax",
+        "type": "Web app - Game",
         "url": "https://www.google.com",
         "repository": "https://www.github.com",
         "description": "A suite of accessible, performance-focused digital tools.  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
