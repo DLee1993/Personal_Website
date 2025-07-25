@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <section className="space-y-10">
             <div className="min-h-[50vh] flex items-center">
-                <h1 className="text-base sm:text-lg max-w-2xl">
+                <h1 className="text-base max-w-2xl">
                     A React-based developer focused on building websites that go beyond
                     aesthetics—building sites that serve, inform, and engage. I code with the
                     intention to create a meaningful, lasting impact.
