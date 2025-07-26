@@ -32,7 +32,7 @@ export default function Menu() {
     return (
         <section
             id="menu"
-            className="fixed bottom-5 left-1/2 -translate-x-1/2 w-11/12 max-w-lg h-11 bg-dark/80 backdrop-blur-lg text-light rounded-sm z-50 overflow-hidden flex flex-col"
+            className="fixed bottom-3 left-1/2 -translate-x-1/2 w-[95%] max-w-lg h-11 bg-dark/80 backdrop-blur-lg text-light rounded-sm z-50 overflow-hidden flex flex-col"
         >
             <header
                 className="flex justify-between items-center h-11 border-b border-light/15 px-2"
