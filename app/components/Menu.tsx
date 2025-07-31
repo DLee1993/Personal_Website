@@ -20,7 +20,7 @@ export default function Menu() {
 
     useGSAP(() => {
         gsap.to("#menu", {
-            height: menuState ? "auto" : "44px",
+            height: menuState ? "250px" : "44px",
             ease: "power2.inOut",
             duration: 0.75,
         });
@@ -32,12 +32,9 @@ export default function Menu() {
     return (
         <section
             id="menu"
-            className="fixed bottom-3 left-1/2 -translate-x-1/2 w-[95%] max-w-lg h-11 bg-dark/80 backdrop-blur-lg text-light rounded-sm z-50 overflow-hidden flex flex-col"
+            className="fixed bottom-3 left-1/2 -translate-x-1/2 w-[95%] max-w-lg h-11 bg-dark/80 backdrop-blur-lg text-light rounded-sm z-50 overflow-hidden flex flex-col justify-between"
         >
-            <header
-                className="flex justify-between items-center h-11 border-b border-light/15 px-2"
-                onClick={toggleMenuState}
-            >
+            <header className="flex justify-between items-center h-11 border-b border-light/15 px-2">
                 <p className="text-light flex justify-center items-center gap-2">
                     Available for work{" "}
                     <span className="block size-1.5 rounded-full bg-green-500"></span>
@@ -49,7 +46,7 @@ export default function Menu() {
                     +
                 </button>
             </header>
-            <section className="p-4 flex justify-between items-start flex-wrap gap-10">
+            <section className="p-4 flex justify-between items-start flex-wrap gap-10 min-h-40">
                 <div className="flex flex-wrap gap-20">
                     <ul className="space-y-1">
                         <li
@@ -104,7 +101,7 @@ export default function Menu() {
                     Start a conversation
                 </Link>
             </section>
-            <footer className="flex items-center min-h-12 border-t border-light/15 px-2">
+            <footer className="flex justify-center items-center min-h-12 border-t border-light/15 px-2">
                 <p className="text-light/50">David Lee &copy; 2025</p>
             </footer>
         </section>
