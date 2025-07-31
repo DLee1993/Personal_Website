@@ -1,14 +1,14 @@
 [
     {
-        "title": "Works",
+        "title": "Showcase",
         "src": "/"
     },
     {
-        "title": "Information",
+        "title": "Behind the portfolio",
         "src": "/information"
     },
     {
-        "title": "Contact",
+        "title": "Send a message",
         "src": "/contact"
     }
 ]
