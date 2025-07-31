@@ -60,7 +60,7 @@ export default function ProjectsList() {
 
     return (
         <>
-            <section>
+            <section className="space-y-10">
                 <SectionHeader text="selected work" />
                 {projects.map((p, i) => (
                     <article
@@ -80,7 +80,7 @@ export default function ProjectsList() {
                                     <h2>{p.title}</h2>
                                 </div>
                                 <p className="hidden min-[500px]:block">{p.type}</p>
-                                <button className="font-thin text-4xl overflow-hidden">
+                                <button className="font-thin text-4xl overflow-hidden cursor-pointer">
                                     <span
                                         className={`block transition-transform duration-300 ${
                                             expandedId === p.id ? "rotate-45" : "rotate-0"
@@ -112,13 +112,13 @@ export default function ProjectsList() {
                                 </section>
                             </section>
                         </div>
-                        <figure className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 pb-20">
+                        <figure className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
                             {p.images.map((img, i) => (
                                 <div key={i} className="relative h-fit">
                                     <img src={img.src} alt={img.caption} />
                                     <div
                                         id="overlay"
-                                        className="w-full h-full absolute top-0 left-0 bg-dark/25"
+                                        className="w-full h-full absolute top-0 left-0 bg-dark/5"
                                     ></div>
                                 </div>
                             ))}
