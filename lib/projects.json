@@ -9,19 +9,19 @@
         "techStack": ["react", "next.js", "tailwindcss", "shadcn ui"],
         "images": [
             {
-                "src": "/toolbox/toolbox-01.png",
+                "src": "/toolbox/toolbox-01.webp",
                 "caption": "001.jpg"
             },
             {
-                "src": "/toolbox/toolbox-02.png",
+                "src": "/toolbox/toolbox-02.webp",
                 "caption": "002.jpg"
             },
             {
-                "src": "/toolbox/toolbox-03.png",
+                "src": "/toolbox/toolbox-03.webp",
                 "caption": "003.jpg"
             },
             {
-                "src": "/toolbox/toolbox-04.png",
+                "src": "/toolbox/toolbox-04.webp",
                 "caption": "004.jpg"
             }
         ]
