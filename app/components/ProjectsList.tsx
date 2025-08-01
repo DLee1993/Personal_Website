@@ -36,7 +36,7 @@ export default function ProjectsList() {
 
                 // animate the height of the element
                 gsap.to(el, {
-                    height: expandedId === id ? "230px" : "40px",
+                    height: expandedId === id ? "200px" : "40px",
                     ease: "power2.inOut",
                     duration: 0.75,
                 });
@@ -90,8 +90,8 @@ export default function ProjectsList() {
                                     </span>
                                 </button>
                             </div>
-                            <section className="px-2.5 py-5 md:py-7 md:px-5 space-y-10">
-                                <p className="max-w-xl">{p.description}</p>
+                            <section className="flex flex-col justify-center items-start gap-7 h-40">
+                                <p className="max-w-3xl">{p.description}</p>
                                 <section className="flex justify-between items-end flex-wrap space-y-10 min-[440px]:space-y-0">
                                     <div className="flex gap-5">
                                         <Link
