@@ -6,7 +6,6 @@
         "url": "https://www.google.com",
         "repository": "https://www.github.com",
         "description": "A suite of accessible, performance-focused digital tools.  is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
-        "techStack": ["react", "next.js", "tailwindcss", "shadcn ui"],
         "images": [
             {
                 "src": "/toolbox/toolbox-01.webp",
